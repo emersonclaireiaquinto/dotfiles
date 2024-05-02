@@ -1,0 +1,66 @@
+* {
+  font-family: FireCode;
+  border-color: transparent;
+  outline-style: none;
+}
+
+window {
+  border-radius: 1rem;
+  background: #181926;
+  color: white;
+  padding: 1rem;
+}
+
+#input {
+  border-radius: 1rem;
+  border-color: transparent;
+  background: #363a4f;
+  color: #cad3f5;
+  font-size: 12pt;
+  padding: 0.5rem;
+  outline: none;
+}
+
+#input:focus {
+  border-color: transparent;
+}
+
+#selected {
+  background: #c6a0f6;
+  border-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 1rem;
+}
+
+#entry:nth-child(even) {
+  background: #1e2030;
+  border-radius: 1rem;
+}
+#entry:nth-child(odd) {
+  background: #24273a;
+  border-radius: 1rem;
+}
+
+#text {
+  padding: 0.75rem;
+  font-size: 10pt;
+}
+
+#outer-box {
+  background: transparent;
+  padding: 1rem;
+}
+
+#inner-box {
+  background: transparent;
+}
+
+#entry {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border-color: transparent;
+  border-radius: 1rem;
+}

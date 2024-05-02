@@ -1,0 +1,3 @@
+80-1-3000-1x3-512-1-3000-1-0x1-1x1-1x1-0-NCHW-FP16-F=ConvDirectNaiveConvFwd:6.28489,0,miopenConvolutionFwdAlgoDirect;ConvBinWinogradRxSf2x3g1:0.19156,0,miopenConvolutionFwdAlgoWinograd;ConvBinWinogradRxSf3x2:0.264001,0,miopenConvolutionFwdAlgoWinograd;GemmFwdRest:0.18542,1440000,miopenConvolutionFwdAlgoGEMM
+512-1-3000-1x3-512-1-1500-1-0x1-1x2-1x1-0-NCHW-FP16-F=ConvDirectNaiveConvFwd:20.6845,0,miopenConvolutionFwdAlgoDirect;GemmFwdRest:0.48724,4608000,miopenConvolutionFwdAlgoGEMM
+1-1-250947-1x459-320-1-569-1-0x0-1x441-1x1-0-NCHW-FP32-F=ConvDirectNaiveConvFwd:2.98189,0,miopenConvolutionFwdAlgoDirect

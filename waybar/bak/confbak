@@ -1,0 +1,89 @@
+{
+    "layer": "top",
+    "width": 1385,
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["custom/left-sep", "clock", "custom/right-sep"],
+    "modules-right": ["custom/left-sep", "wireplumber", "network", "battery", "custom/right-sep"],
+    "sway/window": {
+        "max-length": 50
+    },
+    "clock": {
+        "format": "{:%a, %d. %b  %I:%M %p}",
+        "tooltip": false,
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 14,
+        "icon-theme": "Numix-Circle",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close"
+    },
+    "network":{
+      "interval": 120,
+      "format": "|{icon}  {signalStrength}%|",
+      "format-icons": {
+        "wifi": ["󰤯", "󰤟", "󰤢", "󰤨"],
+      },
+      "on-click": "kitty -e nmtui"
+
+    },
+    "cpu": {
+        "interval": 10,
+        "format": "{}% ",
+        "max-length": 10
+    },
+    "pulseaudio": {
+        "format": "|{icon}  {volume}%|",
+        "format-bluetooth": "|{volume}% {icon}|",
+        "format-muted": "||",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol"
+    },
+    "wireplumber": {
+      "format": "|{icon}  {volume}%|",
+      "format-bluetooth": "|{volume}% {icon}|",
+      "format-muted": "||",
+      "format-icons": {
+          "headphone": "",
+          "hands-free": "",
+          "headset": "",
+          "phone": "",
+          "portable": "",
+          "car": "",
+          "default": ["", ""]
+      },
+      "scroll-step": 1,
+      "on-click": "pavucontrol"
+    },
+    "custom/weather": {
+        "tooltip": false,
+        "exec": "curl 'https://wttr.in?format=1'",
+        "on-click": "kitty -e curl 'https://wttr.in?format=3'",
+        "interval": 800
+    },
+
+    "custom/left-sep": {
+      "format": "-||"
+    },
+    "custom/right-sep": {
+      "format": "||-"
+    },
+
+	"battery": {
+        "format": "|{icon} {capacity}%|",
+        "format-charging": "|{capacity}% {icon} 󱐋|",
+        "format-icons": ["󰂃","󰁺","󰁻","󰁼","󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "interval": 30,
+        "tooltip": false,
+    },
+

@@ -1,0 +1,93 @@
+{
+	"notifications": [
+		{
+			"guid": "c7a2f4a5-97b6-48e5-8140-3992c819b1de",
+			"timestamp": 1709067508457,
+			"read": true,
+			"displayState": "background",
+			"notification": {
+				"message": "You must initialize pass before logging in to Docker Desktop",
+				"icon": "error",
+				"type": "action-result",
+				"operation": "user-log-in",
+				"title": "Unable to log in",
+				"actionText": "Learn how",
+				"action": {
+					"action": "open-credential-store-instructions",
+					"params": {}
+				}
+			}
+		},
+		{
+			"guid": "5ec5ca6b-af5c-406b-b25d-23d09dde490c",
+			"timestamp": 1709067669933,
+			"read": true,
+			"displayState": "background",
+			"notification": {
+				"message": "You must initialize pass before logging in to Docker Desktop",
+				"icon": "error",
+				"type": "action-result",
+				"operation": "user-log-in",
+				"title": "Unable to log in",
+				"actionText": "Learn how",
+				"action": {
+					"action": "open-credential-store-instructions",
+					"params": {}
+				}
+			}
+		},
+		{
+			"guid": "cc641388-a6d6-4ccc-a552-9026a71c41d3",
+			"timestamp": 1709137234692,
+			"read": false,
+			"displayState": "background",
+			"notification": {
+				"message": "How was your startup experience with Docker Desktop?",
+				"icon": "campaign",
+				"type": "feedback",
+				"actionText": "Give feedback",
+				"action": {
+					"action": "show-survey-dialog",
+					"params": {
+						"type": "startupComplete"
+					}
+				}
+			}
+		},
+		{
+			"guid": "eb3ede82-1e8b-4084-b547-657c1ce675c8",
+			"timestamp": 1713785283615,
+			"read": false,
+			"displayState": "background",
+			"notification": {
+				"type": "update",
+				"ephemeral": false,
+				"icon": "sparkles",
+				"message": "Docker Desktop 4.29.0 has been installed. View what's new.",
+				"actionText": "View",
+				"action": {
+					"action": "view-notification-content"
+				},
+				"fullContent": "# What's new in 4.29.0\n - Beta version of air-gapped containers\n- Added the ability to enforce Rosetta usage via Settings Management\n- Docker socket mount restrictions admin configuration with ECI\n- Moby 26 engine including Buildkit 0.13, sub volumes mounts, networking updates, and improvements to the containerd multi-platform image store UX\n- New Docker Desktop error screens: swift troubleshooting, easy diagnostics uploads, and actionable remediation.\n- Compose now supports Synchronised file shares\n- New interactive Compose CLI\n- Added support for host networking in Docker Desktop (Beta)\n"
+			}
+		},
+		{
+			"guid": "768cae60-e6b7-48a4-a6e7-ca1b3ac1fb8a",
+			"timestamp": 1713785284041,
+			"read": false,
+			"displayState": "background",
+			"notification": {
+				"message": "Sign in to share images and collaborate with your team",
+				"icon": "disconnected",
+				"type": "action-result",
+				"operation": "user-log-in",
+				"actionText": "Sign in",
+				"action": {
+					"action": "open-login",
+					"params": {}
+				},
+				"title": "You are signed out"
+			}
+		}
+	]
+}
